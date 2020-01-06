@@ -3280,6 +3280,13 @@ namespace Academic
                 document.Add(Chunk.NEWLINE);
                 document.Add(Chunk.NEWLINE);
 
+                Paragraph line = new Paragraph();
+                txt = "______________________";
+                line.Alignment = Element.ALIGN_CENTER;
+                line.Font = FontFactory.GetFont(FontFactory.HELVETICA, 14f, BaseColor.BLACK);
+                line.Add(txt);
+                document.Add(line);
+
                 Paragraph clteacher = new Paragraph();
                 txt = "Class Teacher's Signature";
                 clteacher.SpacingBefore = 10;
