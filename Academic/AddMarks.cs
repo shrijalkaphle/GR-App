@@ -90,7 +90,7 @@ namespace Academic
             using (MySqlConnection con = conn.connectionResult())
             {
                 bool stat = conn.OpenConnection();
-                var sql = String.Format("SELECT empid,name,grade FROM student WHERE uname = '{0}'", uname);
+                var sql = String.Format("SELECT empid,name,grade FROM student WHERE add_num = '{0}'", uname);
                 using (MySqlCommand cmd = new MySqlCommand(sql, con))
                 {
                     cmd.CommandType = CommandType.Text;
@@ -243,6 +243,42 @@ namespace Academic
                     }
                 }
             }
+            string schoolName = @"C:\GR-App\schoolName.txt";
+            if(!File.Exists(schoolName))
+            {
+                var confirmResult = MessageBox.Show("SchoolName not updated. Update first to create report card!!",
+                                     "Confirm Delete!!",
+                                     MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes) {
+                    UpdateLogo lgo = new UpdateLogo();
+                    lgo.Show();
+                    this.Close();
+                    return;
+                }
+                if (confirmResult == DialogResult.No)
+                {
+                    this.Close();
+                    return;
+                }
+            }
+            string logo1 = @"C:\GR-App\logo.png";
+            string logo2 = @"C:\GR-App\logo.jpg";
+            if (!(File.Exists(logo1) || File.Exists(logo2))) {
+                var confirmResult = MessageBox.Show("SchoolLogo not updated. Update first to create report card!!",
+                                     "Confirm Delete!!",
+                                     MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes) {
+                    UpdateLogo lgo = new UpdateLogo();
+                    lgo.Show();
+                    this.Close();
+                    return;
+                }
+                if (confirmResult == DialogResult.No)
+                {
+                    this.Close();
+                    return;
+                }
+            }
 
             try
             {
@@ -333,7 +369,11 @@ namespace Academic
 
                 Document document = new Document(PageSize.A4);
                 document.SetMargins(-30,-30,5,5);
-                var fileName = "D:/result.pdf";
+                var fileName = @"C:\GR-App\" + info[0] + "_"+ exam +"termresult.pdf";
+                if(File.Exists(fileName))
+                {
+                    File.Delete(fileName);
+                }
                 PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(fileName, FileMode.Create));
                 document.Open();
 
@@ -341,7 +381,7 @@ namespace Academic
                 document.Add(Chunk.NEWLINE);
 
                 Paragraph p = new Paragraph();
-                string file = @"C:\Users\Shrijal Kaphle\Documents\Visual Studio 2015\Projects\Academic\Academic\Information\schoolName.txt";
+                string file = @"C:\GR-App\schoolName.txt";
                 string txt = "";
                 using (StreamReader sr = File.OpenText(file)) {
                     string s = "";
@@ -359,7 +399,7 @@ namespace Academic
                 document.Add(Chunk.NEWLINE);
                 document.Add(Chunk.NEWLINE);
 
-                string dirpath = @"C:\Users\Shrijal Kaphle\Documents\Visual Studio 2015\Projects\Academic\Academic\Information\";
+                string dirpath = @"C:\GR-App\";
                 string[] dirs = Directory.GetFiles(dirpath, "logo.*");
                 iTextSharp.text.Image imgJpg = iTextSharp.text.Image.GetInstance(System.Drawing.Image.FromFile(dirs[0]), new BaseColor(System.Drawing.Color.White));
                 imgJpg.SetDpi(300, 300);
@@ -3048,7 +3088,7 @@ namespace Academic
                 cell.Colspan = 3;
                 cell.HorizontalAlignment = Element.ALIGN_CENTER;
                 table.AddCell(cell);
-                cell = new PdfPCell(new Phrase("1100", font));
+                cell = new PdfPCell(new Phrase("", font));
                 cell.HorizontalAlignment = Element.ALIGN_CENTER;
                 table.AddCell(cell);
                 cell = new PdfPCell(new Phrase());

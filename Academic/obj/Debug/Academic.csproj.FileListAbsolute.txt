@@ -21,3 +21,30 @@ C:\Users\Shrijal Kaphle\documents\visual studio 2015\Projects\Academic\Academic\
 C:\Users\Shrijal Kaphle\documents\visual studio 2015\Projects\Academic\Academic\obj\Debug\Academic.viewMarks.resources
 C:\Users\Shrijal Kaphle\documents\visual studio 2015\Projects\Academic\Academic\obj\Debug\Academic.ViewStudent.resources
 C:\Users\Shrijal Kaphle\documents\visual studio 2015\Projects\Academic\Academic\obj\Debug\Academic.csproj.GenerateResource.Cache
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\Academic.exe.config
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\Academic.exe.manifest
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\Academic.application
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\Academic.exe
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\Academic.pdb
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\itextsharp.dll
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\Google.Protobuf.dll
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\Renci.SshNet.dll
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\itextsharp.xml
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\bin\Debug\MySql.Data.xml
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.csprojAssemblyReference.cache
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.EditDetails.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.Homepage.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.LoginForm.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.Properties.Resources.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.AddMarks.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.StudentDetails.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.UpdateLogo.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.viewMarks.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.ViewStudent.resources
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.csproj.GenerateResource.cache
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.exe.manifest
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.application
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.csproj.CopyComplete
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.exe
+C:\Users\Shrijal Kaphle\Source\Repos\shrijalkaphle\GR-App\Academic\obj\Debug\Academic.pdb

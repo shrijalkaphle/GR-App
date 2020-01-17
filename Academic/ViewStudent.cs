@@ -30,9 +30,9 @@ namespace Academic
             {
                 bool stat = conn.OpenConnection();
                 if (id == null) {
-                    sql = String.Format("SELECT name,uname,doj,mobile,currentaddress,empid FROM student");
+                    sql = String.Format("SELECT name,add_num,doj,mobile,currentaddress,empid FROM student");
                 } else {
-                    sql = String.Format("SELECT name,uname,doj,mobile,currentaddress,empid FROM student WHERE uname LIKE '{0}'",sid);
+                    sql = String.Format("SELECT name,add_num,doj,mobile,currentaddress,empid FROM student WHERE uname LIKE '{0}'",sid);
                 }
                 using (MySqlCommand cmd = new MySqlCommand(sql, con))
                 {

@@ -16,7 +16,10 @@ namespace Academic
         public UpdateLogo()
         {
             InitializeComponent();
-            string dirpath = @"C:\Users\Shrijal Kaphle\Documents\Visual Studio 2015\Projects\Academic\Academic\Information\";
+            string dirpath = @"C:\GR-App\";
+            if (!Directory.Exists(dirpath)) {
+                Directory.CreateDirectory(dirpath);
+            }
             if (Directory.EnumerateFileSystemEntries(dirpath).Any())
             {
                 string[] dirs = Directory.GetFiles(dirpath, "logo.*");
@@ -52,7 +55,7 @@ namespace Academic
             if (dialog.ShowDialog() == DialogResult.OK) // if user clicked OK
             {
                 //check for any previous logo
-                string dirpath = @"C:\Users\Shrijal Kaphle\Documents\Visual Studio 2015\Projects\Academic\Academic\Information\";
+                string dirpath = @"C:\GR-App\";
                 if (Directory.EnumerateFileSystemEntries(dirpath).Any()) {
                     string filePath = Path.Combine(dirpath, "logo.png");
                     string filePath2 = Path.Combine(dirpath, "logo.jpg");
@@ -92,7 +95,7 @@ namespace Academic
             {
                 MessageBox.Show("Error! Please Enter School Name!!");
             } else {
-                string file = @"C:\Users\Shrijal Kaphle\Documents\Visual Studio 2015\Projects\Academic\Academic\Information\schoolName.txt";
+                string file = @"C:\GR-App\schoolName.txt";
                 if(File.Exists(file))
                 {
                     File.Delete(file);
@@ -101,6 +104,7 @@ namespace Academic
                     Byte[] title = new UTF8Encoding(true).GetBytes(name);
                     fs.Write(title, 0, title.Length);
                 }
+                MessageBox.Show("School Name Updated");
             }
         }
 
